@@ -1,0 +1,49 @@
+package ca.bcit.comp1510.lab01;
+
+/**
+ * Prints a Hello World message.
+ * 
+ * @author Hason Wong
+ * @version 2023
+ */
+
+public class Hello {
+
+    /**
+     * Prints the greeting.
+     * 
+     * @param args
+     * unused
+     */
+    public static void main(String[] args) { 
+        System.out.println("Hello World!");
+    }
+
+}
+/**
+ *Class name different from file name (Helo)
+ *Error: Could not find or load main class ca.bcit.comp1510.lab01.Hello
+    Caused by: java.lang.ClassNotFoundException: ca.bcit.comp1510.lab01.Hello
+ *
+ *Misspelling inside string ("Helo World!")
+ *No error. Program compiles since class names match. Console displays "Helo World!"
+ *
+ *No ending quotation mark in a string literal
+ *Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+    String literal is not properly closed by a double-quote
+    at ca.bcit.comp1510.lab01.Hello.main(Hello.java:19)
+ *
+ *No beginning quotation mark in a string literal.
+ *2 error messages
+ *Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+    Syntax error on token(s), misplaced construct(s)
+    Syntax error on token "!", ; expected
+    String literal is not properly closed by a double-quote
+    at ca.bcit.comp1510.lab01.Hello.main(Hello.java:19)
+ *
+ *No semicolon after a statement.
+ *Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+    Syntax error on token "println", ( expected after this token
+    Syntax error, insert ";" to complete BlockStatements
+    at ca.bcit.comp1510.lab01.Hello.main(Hello.java:19)
+ */

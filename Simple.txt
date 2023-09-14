@@ -1,0 +1,29 @@
+package ca.bcit.comp1510.lab01;
+
+public class Simple {
+    
+    /**
+     * @param args
+     */
+    
+    public static void main(String[] args) {
+        System.out.println("I love Java");
+    }
+}
+
+/*
+1. simple (why is this different from the first)
+    Discouraged, Java wants to start with uppercase letter
+2. SimpleProgram
+    Ok
+3. 1 Simple
+    Invalid, cannot start with number
+4. _Simple_
+    Ok
+5. *Simple*
+    Invalid, special character not accepted (only $ and _)
+6. $123_45
+    Discouraged, Java identifiers don't usually contain '$'
+7. Simple!
+    Invalid, special character not accepted
+ */
